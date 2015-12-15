@@ -12,6 +12,23 @@ This program is still in its infancy. The expected usage is:
 
 We expect to provide an `exif2dc` someday.
 
+## config.json
+
+Te config file is a list of JSON objects with parameters `element`,
+`qualifier`, `language` and `to`. The first three are used to identify which
+Dublin Core values to save into the `to` Exif tag of the image.
+
+    [
+      {
+        "element": "contributor",
+        "qualifier": "author",
+        "language": "pt_BR",
+        "to": "Author"
+      },
+      ...
+    ]
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/Knoma-lab/dc2exif.
