@@ -1,2 +1,15 @@
-# Image files.
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# Input files.
+*.xml
 *.jpeg
+*.tiff
+*.json
