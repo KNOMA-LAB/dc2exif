@@ -4,19 +4,18 @@
 
 ## Usage
 
-This program is still in its infancy. The expected usage is:
+The command to convert metadata present in `dc.xml` to EXIF in `picture.jpeg`
+according to the rules in `config.json` is:
 
-    # Convert metadata from `dc.xml` to EXIF in `picture.jpeg` according to the
-    # rules in `config.json`.
     dc2exif -c config.json --dublin-core dc.xml -i picture.jpeg
 
 We expect to provide an `exif2dc` someday.
 
 ## config.json
 
-Te config file is a list of JSON objects with parameters `element`,
-`qualifier`, `language` and `to`. The first three are used to identify which
-Dublin Core values to save into the `to` Exif tag of the image.
+Te config file is a list of JSON objects with parameters `element`, `qualifier`
+and `to`. The first three are used to identify which Dublin Core values to save
+into the `to` Exif tag of the image.
 
     [
       {
